@@ -126,7 +126,7 @@
     padding-left: 10px;
 }
 
-.abc {
+.toggle-menu {
     margin: 0;
     padding: 0;
     height: 200px;
@@ -189,4 +189,8 @@
     padding: 6px 8px 5px;
     font-size: 12px;
     color: #999999
+}
+
+.info .searvice-info a {
+    pointer-events: none;
 }

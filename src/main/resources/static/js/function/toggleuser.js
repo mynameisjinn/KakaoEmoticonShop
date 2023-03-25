@@ -58,7 +58,7 @@ class ToggleService {
                         </div>
                         <div class="mypage-info">
                             <ul class="mypage-box">
-                            
+
                                 <li class="mypage-style">
                                     <a href="" class="mypage-link"></a>
                                         <i class="fa-regular fa-face-kiss-wink-heart"></i>
@@ -69,28 +69,20 @@ class ToggleService {
                     </div>
                     <div>
                         <ul class="abc">
-                            <li class="abc-li">
+                            <li class="toggle-menu-li">
                                 <a href="/index" class="mypage-buttons">홈</a>
                             </li>
-                            <li class="abc-li">
+                            <li class="toggle-menu-li">
                                 <a href="/main/new" class="mypage-buttons">신규</a>
                             </li>
-                            <li class="abc-li">
+                            <li class="toggle-menu-li">
                                 <a href="/main/hot" class="mypage-buttons">인기</a>
                             </li>
                         </ul>
                     </div>
                     <div>
                         <ul class="abcd">
-                            <li class="nqp-inform">
-                                <a href="https://e.kakao.com/notices" class="nqp-link">새소식</a>
-                            </li>
-                            <li class="abcd-a">
-                                <a href="https://e.kakao.com/faq" class="nqp-link">자주묻는 질문</a>
-                            </li>
-                            <li class="abcd-a">
-                                <a href="https://e.kakao.com/number" class="nqp-link">이모티콘 일련번호 입력하기</a>
-                            </li>
+
                         </ul>
                     </div>
                     <div class="company-footer">
@@ -98,9 +90,6 @@ class ToggleService {
                             <a href="" class="company-link">
                                 <span class="company-kakao">kakao</span><span class="company-emoticon">emoticon</span><span class="company-shop">shop</span>
                             </a>
-                        </div>
-                        <div>
-                            <a href="https://www.kakaocorp.com" class="company-link2">@ kakao Corp</a>
                         </div>
                     </div>
                 `
@@ -119,7 +108,7 @@ class ToggleService {
                         </div>
                         <div class="mypage-info">
                             <ul class="mypage-box">
-       
+
                                 <li class="mypage-style">
                                     <a href="/account/mypage" class="mypage-link">
                                     <i class="fa-regular fa-face-kiss-wink-heart login-heart"></i>
@@ -130,29 +119,20 @@ class ToggleService {
                         </div>
                     </div>
                     <div>
-                        <ul class="abc">
-                            <li class="abc-li">
+                        <ul class="toggle-menu">
+                            <li class="toggle-menu-li">
                                 <a href="/index" class="mypage-buttons">홈</a>
                             </li>
-                            <li class="abc-li">
+                            <li class="toggle-menu-li">
                                 <a href="/main/newemoticon" class="mypage-buttons">신규</a>
                             </li>
-                            <li class="abc-li">
+                            <li class="toggle-menu-li">
                                 <a href="/main/hot" class="mypage-buttons">인기</a>
                             </li>
                         </ul>
                     </div>
                     <div>
                         <ul class="abcd">
-                            <li class="nqp-inform">
-                                <a href="https://e.kakao.com/notices" class="nqp-link">새소식</a>
-                            </li>
-                            <li class="abcd-a">
-                                <a href="https://e.kakao.com/faq" class="nqp-link">자주묻는 질문</a>
-                            </li>
-                            <li class="abcd-a">
-                                <a href="https://e.kakao.com/number" class="nqp-link">이모티콘 일련번호 입력하기</a>
-                            </li>
                             <li class="abcd-d">
                                 <a href="/logout" class="nqp-link">로그아웃 하기</a>
                             </li>
@@ -164,11 +144,8 @@ class ToggleService {
                                 <span class="company-kakao">kakao</span><span class="company-emoticon">emoticon</span><span class="company-shop">shop</span>
                             </a>
                         </div>
-                        <div>
-                            <a href="https://www.kakaocorp.com" class="company-link2">@ kakao Corp</a>
-                        </div>
                     </div>
-                
+
                     `
             }
                 </ul>
@@ -235,10 +212,10 @@ class ToggleButton {
         mypageButton.onclick = () => {
             if (principal != null) {
                 if (confirm("로그아웃하시겠습니까?")) {
-                    
+
                     location.href = "/logout"
                 } else {
-                   
+
                 }
             } else {
                 location.href = "/account/login"
@@ -254,9 +231,8 @@ class ToggleButton {
                 `
                 : `
                 <a href="" class="logout"><img src = "https://www.iconpacks.net/icons/2/free-user-logout-icon-3056-thumb.png"></a>
-                
-        `
 
+        `
             }
     `
     }
