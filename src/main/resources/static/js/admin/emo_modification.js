@@ -46,7 +46,7 @@ class EmoModificationApi {
         $.ajax({
             async: false,
             type: "get",
-            url: `:8000/api/admin/emos/${emoObj.emoCode}`,
+            url: `/api/admin/emos/${emoObj.emoCode}`,
             dataType: "json",
             success: response => {
                 responseData = response.data
@@ -65,7 +65,7 @@ class EmoModificationApi {
         $.ajax({
             async: false,
             type: "put",
-            url: `:8000/api/admin/emo/${emoObj.emoCode}`,
+            url: `/api/admin/emo/${emoObj.emoCode}`,
             contentType: "application/json",
             data: JSON.stringify(emoObj),
             dataType: "json",
@@ -87,7 +87,7 @@ class EmoModificationApi {
         $.ajax({
             async: false,
             type: "delete",
-            url: `:8000/api/admin/emo/${emoObj.emoCode}/image/${imageId}`,
+            url: `/api/admin/emo/${emoObj.emoCode}/image/${imageId}`,
             dataType: "json",
             success: response => {
                 console.log(imageId + "삭제완료")
@@ -106,7 +106,7 @@ class EmoModificationApi {
         $.ajax({
             async: false,
             type: "post",
-            url: `:8000/api/admin/emo/${emoObj.emoCode}/images`,
+            url: `/api/admin/emo/${emoObj.emoCode}/images`,
             encType: "multipart/form-data",
             contentType: false,
             processData: false,
@@ -170,7 +170,7 @@ class EmoModificationService {
             const emoImg = document.querySelectorAll(".emo-img")
             
             responseData.emoImage.forEach((imgObj, index) => {
-                emoImg[index].src = ":8000/image/emo/" + imgObj.saveName;
+                emoImg[index].src = "/image/emo/" + imgObj.saveName;
             })
             
             
